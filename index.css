@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'myTableFont';
+    src: url('sansation_light.woff');
+}
+
+#main {
+  display: grid;
+  place-items: center;
+}
+
+#head {
+  display: grid;
+  background-color: yellow;
+  width: 500px;
+  grid-template-columns: 1fr 9fr;
+  place-items: center;
+  border: solid black 2px;
+}
+
+#body {
+  display: grid;
+  padding: 5px 0;
+  width: 500px;
+  border: solid black 2px;
+}
+
+.grid-container {
+  display: -ms-inline-grid;
+}
+.grid-container table thead tr th {
+  border: solid 2px;
+}
+
+#date {
+  width: 20%;
+}
+
+.del{
+  display: none;
+}
+
+/* #deleteColumn {
+    display: none;
+  } */
+
+td#listnm {
+  text-align: left;
+  padding-left: 5px;
+}
+td {
+  text-align: center;
+}
+
+#table {
+  display: none;
+  cursor: pointer;
+  height: 40px;
+  gap: 5px;
+  background-color: aliceblue;
+  font-family: 'myTableFont';
+}
+
+#newListForm {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 25%;
+  border: 3px solid #f1f1f1;
+  z-index: 10;
+  background-color: white;
+  border-radius: 30px 0px;
+}
+
+#submitformbtn {
+  color: white;
+  background-color: green;
+  width: 70px;
+  height: 30px;
+  opacity: 0.8;
+}
+
+#submitformbtn:hover {
+  opacity: 1;
+}
+
+#closeformbtn {
+  color: white;
+  background-color: red;
+  width: 70px;
+  height: 30px;
+  opacity: 0.8;
+}
+#closeformbtn:hover {
+  opacity: 1;
+}
+
+#btn {
+  width: 30px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+#newListForm input[type="text"] {
+  width: 95%;
+  padding: 10px 5px;
+  margin: 5px 2px;
+  border: none;
+  background: #f1f1f1;
+}
+#newListForm textarea[type="text"] {
+  width: 95%;
+  padding: 10px 5px;
+  margin: 5px 2px;
+  border: none;
+  background: #f1f1f1;
+}

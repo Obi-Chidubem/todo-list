@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+   
+    <div id="main"> <!-- this is for the main body -->
+      <span id="head"> <!--that yellow header -->
+        <button id="btn" onclick="btntoggle()">=</button> <!--Find the function in index.js-->
+        <p id="listName">Your_List</p>
+      </span>
+      <span id="body">
+        <span class="grid-container">
+          <table id="table" style="width: 100%">
+            <tr>
+              <td style="width: 33%" id="openform">New List</td>
+              <td style="width: 33%" id="setting">Settings</td>
+              <td style="width: 33%">About</td>
+            </tr>
+          </table>
+        </span>
+        <span class="grid-container">
+          <table style="width: 100%" id="mainTable">
+            <thead>
+              <tr>
+                <th style="width: 10%">S/N</th>
+                <th style="width: 60%">List Title</th>
+                <th id="date">Date Added</th>
+                <th class="del">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                <td>1</td>
+                <td id="listnm">2</td>
+                <td>3</td>
+                <td class="del">del</td>
+              </tr>
+            </tbody>
+          </table>
+        </span>
+      </span>
+      <form
+        style="border: solid black 2px; padding-inline: 20px"
+        id="newListForm"
+      >
+        <h1 id="listheader">Your List</h1>
+        <label for="List Title">Title:</label><br />
+        <input
+          type="text"
+          name="List Title"
+          id="title"
+          placeholder="Enter List Title."
+        /><br />
+        <label for="content">List:</label><br />
+        <textarea
+          type="text"
+          name="content"
+          id="content"
+          style="width: 300px; height: 300px"
+          placeholder="Enter List."
+        ></textarea> <!-- cause the inout won't be presentabe enough -->
+        <br />
+        <button id="submitformbtn" style="margin: 10px">Submit</button>
+        <button id="closeformbtn">Cancel</button>
+      </form>
+    </div>
+  </body>
+</html>
