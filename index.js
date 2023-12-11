@@ -11,7 +11,7 @@ const listheader = document.getElementById("listheader");
 const setting = document.getElementById("setting");
 // const del = document.getElementById("delete");
 // const deletecolumn = document.getElementById("deleteColumn");
-const del = document.getElementsByClassName("del");
+const del = document.getElementsByClassName("del"); 
 const date_added = document.getElementById("date");
 
 let lastValue;
