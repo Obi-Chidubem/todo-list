@@ -35,7 +35,7 @@ function btntoggle() {
 newform.addEventListener("click", () => {
   formVisibility.style.display = "block";
   newform.disabled = true;
-});
+}); 
 
 //To cancel the newform
 cancelForm.addEventListener("click", (e) => {
